@@ -1,5 +1,6 @@
 package com.springboot.web.dto;
 
+import com.springboot.Domain.member.Member;
 import com.springboot.Domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
