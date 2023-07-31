@@ -22,10 +22,9 @@ public class LikesApiController {
         return likeService.save(memberId, postsId);
     }
 
-    @DeleteMapping("/api/v1/likes/{id}")
+    @DeleteMapping("/api/v1/likes/{memberId}/{postsId}")
     public Long delete(@PathVariable Long id) {
-        likeService.delete(id);
-        return id;
+        return likeService.delete(memberId, postsId);
     }
 
     @GetMapping("/api/v1/likes/{id}")
@@ -35,6 +34,6 @@ public class LikesApiController {
 
     @GetMapping("/api/v1/posts/likes/{postId}")
     public List<MemberResponseDto> findAllMember(@PathVariable Long postId) {
-        return likeService.findAllMember(postId);
+        return likeService.findAllMemberByPostsId(postId);
     }
 }

@@ -35,8 +35,6 @@ public class Posts extends BaseTimeEntity {
     @OneToMany(mappedBy = "post")
     List<Likes> likes = new ArrayList<>();
 
-    private int likeCount = 0;
-
     @Builder
     public Posts(String title, String content, String author, Member member) {
         this.title = title;
@@ -48,10 +46,6 @@ public class Posts extends BaseTimeEntity {
     public void update(String title, String content) {
         this.title = title;
         this.content = content;
-    }
-
-    public void updateLikeCount(int likeCount) {
-        this.likeCount = likeCount;
     }
 
     public void setMember(Member member) {

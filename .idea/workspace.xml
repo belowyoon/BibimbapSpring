@@ -4,36 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af7ecf02-67fa-48f3-b922-9daf2d211cf3" name="Changes" comment="2주차, 3주차 반 진행">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/likes/Likes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/likes/LikesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/member/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/member/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/security/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/security/dto/OAuthAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/security/dto/SessionUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/security/service/CustomOAuth2UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/likes/LikeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/LikesApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/MemberResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="af7ecf02-67fa-48f3-b922-9daf2d211cf3" name="Changes" comment="6주차 과제 완료">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/exception/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/exception/ApiExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/exception/ExceptionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/exception/LikeToggleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/exception/MemberNotExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/exception/PostsNotExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/BaseTimeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/likes/LikesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/likes/LikesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Domain/posts/PostsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/PostsApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsSaveRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/likes/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/likes/LikeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/web/LikesApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/LikesApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/MemberResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/MemberResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsListResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,7 +65,8 @@
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "8103c8c3f058216b74e21e2ba62185a4"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -110,7 +98,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690610502981</updated>
-      <workItem from="1690610506692" duration="33348000" />
+      <workItem from="1690610506692" duration="40705000" />
+      <workItem from="1690709076928" duration="2941000" />
     </task>
     <task id="LOCAL-00001" summary="build project">
       <created>1690611274789</created>
@@ -126,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690621587402</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="6주차 과제 완료">
+      <created>1690687592581</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690687592581</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build project" />
     <MESSAGE value="2주차, 3주차 반 진행" />
-    <option name="LAST_COMMIT_MESSAGE" value="2주차, 3주차 반 진행" />
+    <MESSAGE value="6주차 과제 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="6주차 과제 완료" />
   </component>
 </project>

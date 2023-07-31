@@ -23,7 +23,7 @@ public class SecurityConfig {
                 .headers().frameOptions().disable()
                 .and()
                     .authorizeHttpRequests()
-                    .requestMatchers("/","/css/**","/images/**","/js/**","/h2-console/**").permitAll()
+                    .requestMatchers("/","/css/**","/images/**","/js/**","/swagger-ui/**").permitAll()
                     .requestMatchers("/api/v1/**").hasRole(Role.USER.name())
                 .anyRequest().authenticated()
                 .and()
